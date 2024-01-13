@@ -5,7 +5,23 @@ from .models import Reservation
 class ReservationForm(forms.ModelForm):
   class Meta:
     model = Reservation
-    fields = ['fname', 'lname', 'address', 'city', 'province', 'postal', 'email', 'phone', 'arrival_date', 'arrival_time', 'departure_date', 'departure_time', 'number_person', 'message']
+    fields = [
+      'fname',
+      'lname',
+      'address',
+      'city',
+      'province',
+      'postal',
+      'email',
+      'phone',
+      'arrival_date',
+      'arrival_time',
+      'departure_date',
+      'departure_time',
+      'number_person',
+      'message'
+    ]
+
     labels = {
       'fname': 'First Name',
       'lname': 'Last Name',
